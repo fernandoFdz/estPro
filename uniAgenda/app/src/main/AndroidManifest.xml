@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.a69033.uniagenda"
+    tools:ignore="ExtraText">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MenuPrincipal" />
+
+
+        <activity
+            android:name=".Notas.MenuNotas"
+            android:parentActivityName=".MenuPrincipal">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuPrincipal" />
+        </activity>
+        <activity
+            android:name=".Notas.NuevaNota"
+            android:parentActivityName=".Notas.MenuNotas">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Notas.MenuNotas" />
+        </activity>
+        <activity
+            android:name=".Notas.VistaNotas"
+            android:parentActivityName=".Notas.MenuNotas">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Notas.MenuNotas" />
+        </activity>
+        <activity
+            android:name=".Libros.NuevoLibro"
+            android:parentActivityName=".Libros.Libros">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Libros.Libros" />
+        </activity>
+        <activity
+            android:name=".Libros.VerLibreria"
+            android:parentActivityName=".Libros.Libros">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Libros.Libros" />
+        </activity>
+        <activity
+            android:name=".AyudaEstudiantil"
+            android:parentActivityName=".MenuPrincipal">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuPrincipal" />
+        </activity>
+        <activity
+            android:name=".tablaLogica"
+            android:parentActivityName=".AyudaEstudiantil">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AyudaEstudiantil" />
+        </activity>
+        <activity
+            android:name=".conversorG"
+            android:parentActivityName=".AyudaEstudiantil">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AyudaEstudiantil" />
+        </activity>
+        <activity
+            android:name=".Temperatura"
+            android:parentActivityName=".conversorG">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".conversorG" />
+        </activity>
+        <activity
+            android:name=".TablaQuimica"
+            android:parentActivityName=".AyudaEstudiantil">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AyudaEstudiantil" />
+        </activity>
+        <activity
+            android:name=".Libros.Libros"
+            android:parentActivityName=".MenuPrincipal"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuPrincipal" />
+        </activity>
+        <activity
+            android:name=".Peso"
+            android:parentActivityName=".conversorG"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".conversorG" />
+        </activity>
+
+        <receiver
+            android:name=".MyAlarmReceiver"
+            android:process=":remote" />
+
+        <service
+            android:name=".MyTestService"
+            android:exported="false" />
+
+        <activity
+            android:name=".splashScreen"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Creditos"
+            android:parentActivityName=".MenuPrincipal">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuPrincipal" />
+        </activity>
+        <activity android:name=".FormFisica">
+
+        </activity>
+    </application>
+
+</manifest>

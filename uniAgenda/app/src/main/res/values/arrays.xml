@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="materia">
+        <item> </item>
+        <item> Prueba 1</item>
+        <item> Juan Manuel Gómez Silva</item>
+        <item> Mario Augusto Serna Villareal</item>
+        <item> Fernando Granja Fernández</item>
+        <item> Programación Orientada a Objetos</item>
+        <item> Prueba 2</item>
+        <item> Tamales</item>
+    </string-array>
+
+    <string-array name="Dias">
+        <item> </item>
+        <item>lunes</item>
+        <item>martes</item>
+        <item>miercoles</item>
+        <item>Jueves</item>
+        <item>viernes</item>
+        <item>sabado</item>
+        <item>domingo</item>
+    </string-array>
+
+    <string-array name="edicion_eventos">
+        <item> </item>
+        <item> Editar</item>
+        <item> Eliminar</item>
+    </string-array>
+
+    <string-array name="tipo_evento">
+        <item> </item>
+        <item> Examen</item>
+        <item> Tarea</item>
+        <item> Proyecto</item>
+        <item> Devolver Libro</item>
+        <item> Actividad Extracurricular</item>
+        <item> Cumpleaños</item>
+    </string-array>
+
+    <color name="fondoprin">#D40028</color>
+
+
+</resources>

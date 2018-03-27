@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tiutloNuevoLibro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="NUEVO LIBRO"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/tituloLibro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="titulo del libro"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/tituloPrestamo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Prestamo"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/diaPrestamo"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="dia"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/mesPrestamo"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="mes"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/anoPrestamo"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="año"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tituloEntrega"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Entrega"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/diaEntrega"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="dia"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/mesEntrega"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="mes"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/anoEntrega"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="año"
+                android:inputType="number" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/botonGuardarLibro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:onClick="guardarDatosLibros"
+            android:text="GUARDAR" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
