@@ -27,14 +27,15 @@
 
     <Button
         android:id="@+id/botonNuevaNota"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="138dp"
+        android:layout_height="44dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Nueva Nota"
+        android:background="@drawable/boton1"
         android:onClick="agregarNuevaNota"
+        android:text="Nueva Nota"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.148"
@@ -44,14 +45,16 @@
 
     <Button
         android:id="@+id/botonVerNotas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="127dp"
+        android:layout_height="46dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Ver Notas"
+        android:background="@drawable/boton1"
         android:onClick="vistaCompletaNotas"
+        android:text="Ver Notas"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.808"

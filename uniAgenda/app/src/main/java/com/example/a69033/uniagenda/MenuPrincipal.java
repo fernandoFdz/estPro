@@ -25,17 +25,10 @@ public class MenuPrincipal extends AppCompatActivity {
         startActivity(miIntentM);
     }
 
-    
     public void seccionLibros(View view) {
         Intent miIntent = new Intent(MenuPrincipal.this, Libros.class);
         startActivity(miIntent);
     }
-
-
-
-
-
-
 
     public void MenuNotas(View view)
     {

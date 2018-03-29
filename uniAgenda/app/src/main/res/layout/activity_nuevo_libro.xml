@@ -20,6 +20,7 @@
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
+
             android:text="NUEVO LIBRO"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="18sp" />
@@ -135,9 +136,10 @@
 
         <Button
             android:id="@+id/botonGuardarLibro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
             android:layout_margin="15dp"
+            android:background="@drawable/boton1"
             android:onClick="guardarDatosLibros"
             android:text="GUARDAR" />
 

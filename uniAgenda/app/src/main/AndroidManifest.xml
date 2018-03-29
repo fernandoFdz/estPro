@@ -22,8 +22,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MenuPrincipal" />
-
-
         <activity
             android:name=".Notas.MenuNotas"
             android:parentActivityName=".MenuPrincipal">
@@ -128,7 +126,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Creditos"
             android:parentActivityName=".MenuPrincipal">
@@ -136,9 +133,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuPrincipal" />
         </activity>
-        <activity android:name=".FormFisica">
-
-        </activity>
+        <activity android:name=".FormFisica"></activity>
     </application>
 
 </manifest>

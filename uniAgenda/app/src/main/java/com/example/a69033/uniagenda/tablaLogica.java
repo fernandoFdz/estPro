@@ -4,6 +4,8 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.github.chrisbanes.photoview.PhotoView;
+
 public class tablaLogica extends AppCompatActivity {
 
     @Override
@@ -13,5 +15,8 @@ public class tablaLogica extends AppCompatActivity {
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
+
+        PhotoView photoView = (PhotoView) findViewById(R.id.logica);
+        photoView.setImageResource(R.drawable.tabla);
     }
 }
