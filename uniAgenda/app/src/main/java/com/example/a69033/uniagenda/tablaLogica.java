@@ -16,7 +16,5 @@ public class tablaLogica extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        PhotoView photoView = (PhotoView) findViewById(R.id.logica);
-        photoView.setImageResource(R.drawable.tabla);
     }
 }

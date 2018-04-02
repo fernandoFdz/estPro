@@ -5,6 +5,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 
 import com.github.chrisbanes.photoview.PhotoView;
+import com.q42.android.scrollingimageview.ScrollingImageView;
 
 /**
  * Created by Ferykudou on 28/10/2017.
@@ -21,8 +22,9 @@ public class TablaQuimica extends AppCompatActivity{
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        PhotoView photoView = (PhotoView) findViewById(R.id.lol1);
-        photoView.setImageResource(R.drawable.tablaq);
+
+
+
 
 
 

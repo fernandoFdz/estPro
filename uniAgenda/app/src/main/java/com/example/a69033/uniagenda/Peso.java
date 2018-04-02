@@ -31,7 +31,7 @@ public class Peso extends AppCompatActivity {
         resultado=(TextView) findViewById(R.id.result);
         spiner=(Spinner) findViewById(R.id.spin);
 
-        String[]op={"Selecciona una opcion","gramos a kilos", "kilos a libras"};
+        String[]op={"Selecciona una opcion","gramos a kilos", "kilos a libras" , "tonelada a kilos", "onza a libras", };
         ArrayAdapter<String> adapter= new
                 ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,op);
         spiner.setAdapter(adapter);
@@ -57,6 +57,14 @@ public class Peso extends AppCompatActivity {
                             break;
                         case 2:
                             res = c *2.2046 ;
+                            break;
+
+                        case 3:
+                            res = c / 1000;
+                            break;
+
+                        case 4:
+                            res = c * 0.0625;
                             break;
                     }
                     resultado.setText(res.toString());
